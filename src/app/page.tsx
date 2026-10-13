@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PHONE_HREF, faqs, services } from "@/lib/data";
 import { CallBanner, Faq, Stars } from "@/components/ui";
+import { Reviews } from "@/components/Reviews";
 
 const steps = [
   { n: "01", title: "Vous appelez", text: "Expliquez le problème à Julien par téléphone." },
@@ -149,6 +150,7 @@ export default function Home() {
         </div>
       </section>
 
+      <Reviews />
       <Faq items={faqs.home} />
       <CallBanner />
     </>
