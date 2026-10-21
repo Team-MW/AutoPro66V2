@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import { FloatingCall, Header, Footer } from "@/components/ui";
+import { getSiteUrl } from "@/lib/site";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const oswald = Oswald({ variable: "--font-oswald", subsets: ["latin"] });
@@ -25,6 +26,7 @@ const localBusiness = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: "Mécanicien à domicile Saint-Cyprien & Perpignan | Auto Pro 66, garage mobile",
   description:
     "Auto Pro 66, mécanicien à domicile sans garage dans les Pyrénées-Orientales (66). Julien se déplace chez vous et sur les aires de camping-cars à Saint-Cyprien, Perpignan et alentours. Lun–Ven 8h–18h. 06 61 58 41 42.",

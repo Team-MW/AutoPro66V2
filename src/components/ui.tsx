@@ -79,7 +79,14 @@ export function Footer() {
           <p className="mt-1">Saint-Cyprien / Perpignan (66)</p>
         </div>
       </div>
-      <p className="border-t border-white/10 py-5 text-center text-xs text-neutral-600">© 2026 Auto Pro 66</p>
+      <p className="border-t border-white/10 py-5 text-center text-xs text-neutral-600">
+        © 2026 Auto Pro 66
+        <span className="mx-2" aria-hidden>·</span>
+        Réalisée par{" "}
+        <a href="https://microdidact.com/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/20 underline-offset-2 hover:text-white">
+          Microdidact
+        </a>
+      </p>
     </footer>
   );
 }
