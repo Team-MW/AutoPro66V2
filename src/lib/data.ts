@@ -27,7 +27,7 @@ export const services: Service[] = [
   {
     slug: "entretien-vidange",
     title: "Entretien & vidange",
-    short: "Huile, filtres, bougies, niveaux : l'entretien courant fait chez vous.",
+    short: "Révision complète et entretien général : huile, filtres, bougies et niveaux, faits chez vous.",
     intro:
       "Un entretien régulier, c'est la meilleure façon d'éviter les grosses pannes. Julien réalise la vidange et la révision de votre véhicule directement devant chez vous, avec des huiles et pièces conformes aux préconisations constructeur.",
     includes: [
@@ -51,6 +51,36 @@ export const services: Service[] = [
       {
         q: "Où sont jetés l'huile et les filtres usagés ?",
         a: "Julien récupère tous les déchets et les dépose dans une filière de recyclage agréée. Rien ne reste chez vous.",
+      },
+    ],
+  },
+  {
+    slug: "depannage",
+    title: "Dépannage",
+    short: "Véhicule en panne chez vous, au travail ou sur une aire : Julien vient sur place.",
+    intro:
+      "Votre véhicule ne démarre plus ou s'est arrêté là où il est garé ? Auto Pro 66 se déplace pour le dépanner sur place, du lundi au vendredi. Julien diagnostique la panne et la répare quand elle peut l'être sans atelier.",
+    includes: [
+      "Déplacement sur le lieu de la panne : domicile, travail, parking ou aire de camping-car",
+      "Diagnostic de la panne immobilisante",
+      "Réparation sur place quand la pièce et l'accès le permettent",
+      "Batterie, démarrage et pannes courantes traités dans la foulée",
+      "Explication claire si l'intervention doit être reportée ou faite en atelier",
+    ],
+    signs: [
+      "Le véhicule refuse de démarrer",
+      "Il s'est arrêté et ne repart plus",
+      "Un voyant s'allume et la voiture passe en mode dégradé",
+      "Vous êtes en vacances avec un camping-car immobilisé sur une aire",
+    ],
+    faq: [
+      {
+        q: "Faites-vous du remorquage ?",
+        a: "Non. Julien vient avec son véhicule équipé et répare sur place. Il ne dépanne pas par remorquage vers un garage.",
+      },
+      {
+        q: "Intervenez-vous le week-end ou la nuit ?",
+        a: "Non. Le dépannage se fait du lundi au vendredi, de 8h à 18h. Appelez dès que la panne se déclare pour être calé au plus vite.",
       },
     ],
   },
@@ -87,7 +117,7 @@ export const services: Service[] = [
   {
     slug: "diagnostic",
     title: "Diagnostic électronique",
-    short: "Lecture des défauts à la valise et recherche de panne.",
+    short: "Recherche de panne : lecture des défauts à la valise et identification du problème.",
     intro:
       "Un voyant allumé au tableau de bord ? Julien se déplace avec sa valise de diagnostic multimarque pour lire les codes défauts, identifier l'origine du problème et vous expliquer clairement ce qu'il faut faire.",
     includes: [
@@ -137,7 +167,7 @@ export const services: Service[] = [
   {
     slug: "distribution-embrayage",
     title: "Courroies & embrayage",
-    short: "Courroie d'accessoires, kit de distribution, embrayage selon véhicule.",
+    short: "Distribution, courroie d'accessoires et embrayage, selon le véhicule.",
     intro:
       "Certaines interventions plus lourdes peuvent aussi être réalisées à domicile selon le modèle de votre véhicule et l'accès disponible. Julien évalue la faisabilité avec vous avant de se déplacer.",
     includes: [
@@ -210,7 +240,7 @@ export const faqs = {
   services: [
     {
       q: "Quelles réparations peuvent être faites à domicile ?",
-      a: "La grande majorité : entretien, vidange, freins, batterie, démarreur, alternateur, courroies, suspension et diagnostic électronique. Seules les opérations nécessitant un pont élévateur ou un banc spécifique doivent être faites en garage.",
+      a: "La grande majorité : révision, entretien, distribution, embrayage, dépannage, freins, suspension, batterie et recherche de panne. Seules les opérations nécessitant un pont élévateur ou un banc spécifique doivent être faites en garage.",
     },
     {
       q: "Fournissez-vous les pièces ?",

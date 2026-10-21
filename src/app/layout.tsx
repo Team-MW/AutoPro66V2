@@ -25,9 +25,18 @@ const localBusiness = {
 };
 
 export const metadata: Metadata = {
-  title: "Auto Pro 66 | Mécanicien à domicile – Saint-Cyprien & Perpignan",
+  title: "Mécanicien à domicile Saint-Cyprien & Perpignan | Auto Pro 66, garage mobile",
   description:
-    "Auto Pro 66, mécanicien mobile dans les Pyrénées-Orientales. Julien se déplace à votre domicile et sur les aires de camping-cars. Lun–Ven 8h–18h. 06 61 58 41 42.",
+    "Auto Pro 66, mécanicien à domicile sans garage dans les Pyrénées-Orientales (66). Julien se déplace chez vous et sur les aires de camping-cars à Saint-Cyprien, Perpignan et alentours. Lun–Ven 8h–18h. 06 61 58 41 42.",
+  keywords: [
+    "mécanicien à domicile",
+    "garage mobile",
+    "mécanicien Saint-Cyprien",
+    "mécanicien Perpignan",
+    "mécanicien camping-car",
+    "réparation voiture à domicile 66",
+    "Pyrénées-Orientales",
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

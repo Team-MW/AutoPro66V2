@@ -10,12 +10,25 @@ const nav = [
   { href: "/contact", label: "Contact" },
 ];
 
+function BrandLogo({ className, priority = false }: { className: string; priority?: boolean }) {
+  return (
+    <Image
+      src="/images/logo-auto-pro-66.png"
+      alt="Auto Pro 66"
+      width={1200}
+      height={433}
+      priority={priority}
+      className={className}
+    />
+  );
+}
+
 export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
-        <Link href="/" className="font-display text-2xl font-bold uppercase tracking-wide">
-          Auto Pro <span className="text-brand">66</span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
+        <Link href="/" className="shrink-0">
+          <BrandLogo priority className="h-11 w-auto md:h-14" />
         </Link>
         <nav className="hidden gap-7 text-sm text-neutral-300 md:flex">
           {nav.map((n) => (
@@ -44,9 +57,9 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-neutral-950">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 text-sm text-neutral-400 md:grid-cols-3">
         <div>
-          <p className="font-display text-xl font-bold uppercase text-white">
-            Auto Pro <span className="text-brand">66</span>
-          </p>
+          <Link href="/" className="inline-block">
+            <BrandLogo className="h-16 w-auto" />
+          </Link>
           <p className="mt-3">Mécanicien à domicile dans les Pyrénées-Orientales. Pas de garage : on se déplace chez vous.</p>
         </div>
         <div>
@@ -119,6 +132,7 @@ export function CallBanner() {
     <section className="relative overflow-hidden border-t border-white/10 py-20 text-center">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(225,6,0,0.3),transparent_60%)]" />
       <div className="relative mx-auto max-w-3xl px-5">
+        <BrandLogo className="mx-auto mb-6 h-16 w-auto md:h-20" />
         <h2 className="font-display text-3xl font-bold uppercase md:text-5xl">
           Une panne ? <span className="text-brand">Appelez Julien</span>
         </h2>

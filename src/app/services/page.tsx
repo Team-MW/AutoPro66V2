@@ -5,7 +5,7 @@ import { CallBanner, PageHero, Faq, images } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Services de mécanique à domicile | Auto Pro 66",
-  description: "Entretien, vidange, freinage, diagnostic, batterie, embrayage, suspension : toutes les réparations faites chez vous dans le 66.",
+  description: "Révision, distribution, embrayage, dépannage, freinage, suspension et recherche de panne : la mécanique à domicile dans le 66.",
 };
 
 export default function ServicesPage() {

@@ -11,9 +11,12 @@ const steps = [
 ];
 
 const avantages = [
-  { title: "Zéro déplacement", text: "Plus besoin de déposer la voiture, de trouver quelqu'un pour vous ramener ou de poser une journée." },
+  { title: "Zéro déplacement", text: "Plus besoin de déposer la voiture, de trouver quelqu'un pour vous ramener ou de poser une journée. Julien se déplace à domicile." },
   { title: "Interlocuteur unique", text: "Vous parlez directement à Julien, celui qui répare votre véhicule. Pas d'accueil, pas d'intermédiaire." },
   { title: "Transparence", text: "Vous pouvez voir le travail effectué et poser toutes vos questions pendant l'intervention." },
+  { title: "Intervention rapide", text: "Une panne immobilise le véhicule ? Julien s'organise pour passer au plus vite, du lundi au vendredi." },
+  { title: "Travail propre", text: "L'intervention est faite proprement, avec bâche de protection, et les déchets sont récupérés. On laisse l'endroit comme on l'a trouvé." },
+  { title: "Service fiable", text: "Le rendez-vous est tenu, le prix est annoncé avant de commencer, et seul le travail convenu est réalisé." },
 ];
 
 export default function Home() {
@@ -40,6 +43,9 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg text-neutral-300">
             Julien se déplace chez vous et sur les aires de camping-cars autour de Saint-Cyprien et Perpignan pour
             entretenir et réparer votre véhicule.
+          </p>
+          <p className="mt-4 font-display text-xl font-semibold uppercase tracking-wide">
+            Vous ne bougez pas, <span className="text-brand">on s&apos;occupe de votre véhicule.</span>
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href={PHONE_HREF} className="rounded-md bg-brand px-7 py-4 font-semibold hover:bg-brand-dark">Appeler Julien</a>
@@ -68,6 +74,43 @@ export default function Home() {
               <p className="text-sm uppercase tracking-wide text-white/80">{l}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="py-24">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-5">
+          <div className="lg:col-span-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Garage mobile · 66</p>
+            <h2 className="mt-3 font-display text-4xl font-bold uppercase leading-tight">
+              Mécanicien à domicile à <span className="text-brand">Saint-Cyprien</span> et <span className="text-brand">Perpignan</span>
+            </h2>
+            <div className="mt-8 rounded-lg border-l-4 border-brand bg-neutral-950 p-5">
+              <p className="font-display text-xl font-semibold uppercase">Pas d&apos;atelier, pas d&apos;attente</p>
+              <p className="mt-1 text-sm text-neutral-400">Julien vient à vous : domicile, travail, parking, aire de camping-car.</p>
+            </div>
+          </div>
+          <div className="space-y-5 leading-relaxed text-neutral-300 lg:col-span-3">
+            <p>
+              <strong className="text-white">Auto Pro 66 est un garage mobile</strong> : Julien n&apos;a pas de garage fixe, c&apos;est lui qui se
+              déplace avec son véhicule équipé, son outillage et sa valise de diagnostic. Votre voiture est entretenue et réparée{" "}
+              <strong className="text-white">directement chez vous</strong>, sur votre lieu de travail ou sur votre emplacement de camping.
+            </p>
+            <p>
+              Mécanicien indépendant dans les <strong className="text-white">Pyrénées-Orientales</strong>, il intervient à{" "}
+              <strong className="text-white">Saint-Cyprien, Perpignan</strong>, Canet-en-Roussillon, Argelès-sur-Mer, Elne et dans les
+              communes voisines. Vidange, plaquettes de frein, batterie, démarreur, diagnostic électronique ou courroie : la plupart des
+              réparations courantes se font sur place, sans que vous ayez à déposer votre véhicule.
+            </p>
+            <p>
+              Vous êtes en vacances sur la côte catalane ? Julien se rend aussi sur les{" "}
+              <strong className="text-white">aires de camping-cars</strong> et les campings pour dépanner ou entretenir le porteur de votre
+              camping-car. Fini la recherche d&apos;un garage qui accepte les gros gabarits : la{" "}
+              <strong className="text-white">mécanique à domicile</strong> vient à vous.
+            </p>
+            <Link href="/zone-intervention" className="inline-block font-semibold text-brand hover:underline">
+              Voir la zone d&apos;intervention →
+            </Link>
+          </div>
         </div>
       </section>
 
